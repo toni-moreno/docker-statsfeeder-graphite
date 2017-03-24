@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rules>
+    <Rule target="instanceName">
+        <replace searchValue="." newValue="_"/>
+        <replace searchValue="-" newValue="_"/>
+        <replace searchValue="/" newValue="_"/>
+        <replace searchValue=" " newValue="_"/>
+    </Rule>
+    <Rule target="instanceName">
+        <replace searchValue="." newValue="_"/>
+    </Rule>
+    <Rule target="cluster">
+        <replace searchValue="." newValue="_"/>
+    </Rule>
+    <Rule target="eName">
+        <replace searchValue=" " newValue="_"/>
+        <replace searchValue="-" newValue="_"/>
+        <replace searchValue="." newValue="_"/>
+    </Rule>
+    <Rule target="eName">
+        <Match>swcasp503</Match>
+        <Stop>true</Stop>
+    </Rule>
+    <Rule target="eName">
+	<LowerCase>true</LowerCase>
+    </Rule>
+    <Rule target="hostName">
+        <replace searchValue=" " newValue="_"/>
+        <replace searchValue="." newValue="_"/>
+        <LowerCase>true</LowerCase>
+    </Rule>
+</Rules>
