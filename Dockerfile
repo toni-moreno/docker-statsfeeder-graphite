@@ -10,7 +10,7 @@ RUN mkdir /statsfeeder/logs
 VOLUME ["/statsfeeder/config", "/statsfeeder/logs"]
 
 
-COPY ./statsfeeder-GraphiteReceiver-1.0-IPM-4.0.jar /statsfeeder/lib
+COPY ./statsfeeder-GraphiteReceiver-1.0-IPM-4.1.jar /statsfeeder/lib
 COPY ./ConfigOutGraphite.conf /statsfeeder/config/
 COPY ./log4j.properties /statsfeeder/config/
 COPY ./vcenter.conf /statsfeeder/config/
